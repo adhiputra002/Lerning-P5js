@@ -1,0 +1,30 @@
+function setup() {
+  createCanvas(640, 480); // Ukuran jendela 640x480
+  
+  // Set background ke warna random
+  let bgColor = color(random(255), random(255), random(255));
+  background(bgColor);
+
+  // Memilih bentuk secara random
+  let shapes = ['circle', 'rectangle', 'triangle', 'ellipse'];
+  chosenShape = random(shapes); // Simpan bentuk yang dipilih di variabel
+
+  noLoop(); // Menghentikan pengulangan gambar
+}
+
+function draw() {
+  noStroke();
+  let shapeColor = color(random(255), random(255), random(255));
+  fill(shapeColor); // Set warna acak untuk bentuk
+
+  // Menggambar bentuk berdasarkan pilihan
+  if (chosenShape === 'circle') {
+    ellipse(width / 2, height / 2, 200, 200); // Lingkaran di tengah
+  } else if (chosenShape === 'rectangle') {
+    rect(width / 2 - 100, height / 2 - 50, 200, 100); // Persegi panjang di tengah
+  } else if (chosenShape === 'triangle') {
+    triangle(width / 2, height / 2 - 100, width / 2 - 100, height / 2 + 100, width / 2 + 100, height / 2 + 100); // Segitiga di tengah
+  } else if (chosenShape === 'ellipse') {
+    ellipse(width / 2, height / 2, 300, 150); // Elips di tengah
+  }
+}
