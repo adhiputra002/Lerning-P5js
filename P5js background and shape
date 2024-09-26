@@ -1,0 +1,42 @@
+// PROGRAM DI BAWAH BERBENTUK KOTAK
+function setup() {
+  createCanvas(640, 480); // Ukuran canvas
+  let bgColor = color(random(255), random(255), random(255)); // Warna latar belakang acak
+  background(bgColor);
+}
+
+function draw() {
+  fill(random(255), random(255), random(255)); // Warna kotak acak
+  noStroke();
+  rect(width / 2 - 100, height / 2 - 100, 200, 200); // Gambar kotak di tengah
+  noLoop(); // Menghentikan draw agar tidak berulang
+}
+
+
+//PROGRAM DIBAWAH BERBENTUK LINGKARAN 
+function setup() {
+  createCanvas(640, 480); // Ukuran canvas
+  let bgColor = color(random(255), random(255), random(255)); // Warna latar belakang acak
+  background(bgColor);
+}
+
+function draw() {
+  fill(random(255), random(255), random(255)); // Warna lingkaran acak
+  noStroke();
+  ellipse(width / 2, height / 2, 200, 200); // Gambar lingkaran di tengah
+  noLoop(); // Menghentikan draw agar tidak berulang
+}
+
+//PROGRAM DIBAWAH BERBENTUK SEGITIGA
+function setup() {
+  createCanvas(640, 480); // Ukuran canvas
+  let bgColor = color(random(255), random(255), random(255)); // Warna latar belakang acak
+  background(bgColor);
+}
+
+function draw() {
+  fill(random(255), random(255), random(255)); // Warna segitiga acak
+  noStroke();
+  triangle(width / 2, height / 2 - 100, width / 2 - 100, height / 2 + 100, width / 2 + 100, height / 2 + 100); // Gambar segitiga di tengah
+  noLoop(); // Menghentikan draw agar tidak berulang
+}
